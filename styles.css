@@ -1,0 +1,259 @@
+:root {
+  --intro-color: hsl(217, 28%, 15%);
+  --main-bg: hsl(218, 28%, 13%);
+  --footer-bg: hsl(216, 53%, 9%);
+  --testimonial-bg: hsl(219, 30%, 18%);
+  --cyan: hsl(176, 68%, 64%);
+  --blue: hsl(198, 60%, 50%);
+  --error: hsl(0, 100%, 63%);
+  --white: hsl(0, 0%, 100%);
+  --line-height-one: 1.8rem;
+  --line-height-two: 0.6rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--intro-color);
+  padding: 2rem;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2.5rem;
+}
+
+.showcase {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--intro-color);
+}
+
+.showcase-intro {
+  color: var(--white);
+  text-align: center;
+  margin-bottom: 1rem;
+  line-height: var(--line-height-one);
+  z-index: 1;
+}
+
+.showcase-text {
+  color: var(--white);
+  text-align: center;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+  z-index: 1;
+}
+
+.showcase-btn {
+  padding: 7px 55px;
+  border-radius: 20px;
+  background: radial-gradient(var(--cyan), var(--blue));
+  z-index: 1;
+}
+
+.showcase-wave {
+  width: 100%;
+  /* position: relative;
+  top: -150px;
+  right: 75px; */
+}
+
+.info {
+  background-color: var(--main-bg);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-bottom: 3rem;
+}
+
+.access-icon,
+.security-icon,
+.realtime-icon,
+.storefile-icon {
+  margin: auto;
+  margin-bottom: 1.5rem;
+}
+
+.first {
+  margin-bottom: 5rem;
+}
+
+.first,
+.second {
+  display: grid;
+  text-align: center;
+}
+
+.info-heading {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.info-heading,
+.info-text {
+  color: var(--white);
+}
+
+.productivity {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  background-color: var(--main-bg);
+  padding: 3.5rem;
+}
+
+.prod-heading,
+.prod-paragraph-1,
+.prod-paragraph-2 {
+  color: var(--white);
+}
+
+.prod-heading {
+  margin-bottom: 0.5rem;
+}
+
+.prod-paragraph-1 {
+  margin-bottom: 0.6rem;
+}
+
+.prod-paragraph-2 {
+  margin-bottom: 1rem;
+}
+
+.reviews {
+  background-color: var(--main-bg);
+  color: white;
+  display: flex;
+  padding-bottom: 8rem;
+}
+
+.review-container-1,
+.review-container-2,
+.review-container-3 {
+  background-color: var(--testimonial-bg);
+  margin: 1.8rem;
+  border-radius: 2px;
+  padding: 40px 20px 15px;
+  z-index: 1;
+}
+
+.review-quote {
+  margin: auto;
+  position: relative;
+  bottom: 155px;
+  left: 70px;
+}
+
+.reviewer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reviewer-img {
+  width: 20%;
+  height: 20%;
+  border-radius: 50%;
+}
+
+.footer {
+  color: var(--white);
+  background-color: var(--footer-bg);
+}
+
+.email {
+  background-color: var(--main-bg);
+  max-width: 750px;
+  margin: auto;
+  padding: 40px 50px;
+}
+
+.email {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 4px 10px 20px 3px var(--footer-bg);
+}
+
+.email {
+  position: relative;
+  bottom: 105px;
+}
+
+.email-heading {
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+}
+
+.email-heading,
+.email-text {
+  text-align: center;
+}
+
+.email-text {
+  font-size: 0.8rem;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.2rem;
+}
+
+.input input {
+  padding: 8px 125px;
+  border-radius: 2.5rem;
+}
+
+.input a {
+  padding: 10px 20px;
+  border-radius: 20px;
+  background: radial-gradient(var(--cyan), var(--blue));
+}
+
+.init-footer {
+  margin: 0 50px;
+}
+
+.footer-items {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  align-content: center;
+  justify-content: center;
+}
+
+/* Frontend mentor atrribution */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

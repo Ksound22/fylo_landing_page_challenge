@@ -52,6 +52,11 @@ nav ul {
   gap: 2.5rem;
 }
 
+nav ul a:hover {
+  text-decoration: underline;
+  font-weight: 400;
+}
+
 .showcase {
   display: flex;
   align-items: center;
@@ -92,6 +97,10 @@ nav ul {
 
 .showcase-wave-1 {
   display: none;
+}
+
+.showcase-btn:hover {
+  background: var(--cyan);
 }
 
 .info-section {
@@ -269,6 +278,10 @@ span {
   background: radial-gradient(var(--cyan), var(--blue));
 }
 
+.input-btn:hover {
+  background: var(--cyan);
+}
+
 .init-footer {
   margin: 0 50px;
 }
@@ -280,6 +293,30 @@ span {
   grid-template-columns: repeat(4, 1fr);
   align-content: center;
   justify-content: center;
+}
+
+.one-container,
+.two-container,
+.three-container,
+.four-container {
+  padding: 1rem;
+}
+
+.two-a {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.two-b {
+  display: flex;
+  gap: 2rem;
+}
+
+.one-container,
+.three-container,
+.four-container {
+  line-height: 2rem;
 }
 
 @media screen and (max-width: 650px) {
@@ -320,6 +357,10 @@ span {
   .productivity img {
     height: 80%;
     width: 80%;
+  }
+
+  .prod-link:hover {
+    text-decoration: underline;
   }
 
   .reviews-container {

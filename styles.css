@@ -72,11 +72,19 @@ nav ul {
   z-index: 1;
 }
 
+.wave {
+  background-color: var(--intro-color);
+}
 .showcase-wave {
-  width: 100%;
-  /* position: relative;
-  top: -150px;
-  right: 75px; */
+  width: 1250px;
+}
+
+.showcase-wave-1 {
+  display: none;
+}
+
+.info-section {
+  background-color: var(--intro-color);
 }
 
 .info {
@@ -167,8 +175,13 @@ nav ul {
 
 .reviewer {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.rtext {
+  display: flex;
 }
 
 .reviewer-img {
@@ -249,11 +262,113 @@ nav ul {
   justify-content: center;
 }
 
+@media screen and (max-width: 650px) {
+  nav {
+    font-size: 0.8rem;
+    gap: 1rem;
+  }
+
+  .showcase img {
+    height: 50%;
+    width: 50%;
+  }
+
+  .showcase-wave {
+    display: none;
+  }
+
+  .showcase-wave-1 {
+    display: block;
+    object-fit: cover;
+  }
+
+  .info {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding-bottom: 1rem;
+  }
+
+  .storefile-icon {
+    margin-top: 4rem;
+  }
+
+  .productivity {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .productivity img {
+    height: 80%;
+    width: 80%;
+  }
+
+  .reviews {
+    flex-direction: column;
+  }
+
+  .email {
+    height: 70%;
+    width: 70%;
+  }
+
+  .input {
+    flex-direction: column;
+  }
+
+  .input input {
+    padding: 8px 55px;
+    border-radius: 2.5rem;
+  }
+
+  .footer-items {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .one {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .one p {
+    line-height: 1.5rem;
+  }
+
+  .one img {
+    height: 10%;
+    width: 10%;
+  }
+
+  .one-container,
+  .two-container,
+  .three-container,
+  .four-container {
+    padding: 1rem;
+  }
+
+  .two-a {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .two-b {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .three-container,
+  .four-container {
+    line-height: 2rem;
+  }
+}
+
 /* Frontend mentor atrribution */
 .attribution {
-  font-size: 11px;
+  font-size: 16px;
   text-align: center;
+  background-color: hsl(216, 53%, 9%);
+  color: white;
 }
-.attribution a {
-  color: hsl(228, 45%, 44%);
+.attribution a45 {
+  color: hsl(458, 45%, 44%);
 }
